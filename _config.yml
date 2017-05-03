@@ -1,0 +1,37 @@
+title: Zarrish and Fahad
+email: about@fahadzarrish.wedding
+description: >
+  are getting married!
+baseurl: "http://fahadzarrish.wedding"
+url: "http://fahadzarrish.wedding"
+address: |
+  Pearl Banquet Hall <br>
+  Survey No. 40/1 near <br>
+  Army Public School, <br>
+  Main Rashid Minhas Road, <br>
+  Karachi.
+phone: 
+email: rsvp<at>fahadzarrish<dot>wedding
+social_media:
+  twitter: https://twitter.com/hashtag/FahadZarrish
+  facebook: https://www.facebook.com/hashtag/FahadZarrish
+  instagram: https://www.instagram.com/explore/tags/FahadZarrish
+  github: https://github.com/fahadiqbal1/wedding
+google_analytics: false
+
+# Build settings
+markdown: kramdown
+# theme: minima
+gems:
+  - jekyll-feed
+plugins_dir: [jekyll-assets]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+include: ["_pages"]
+permalink: /:title/
+
+assets:
+  compress:
+    css: true
+    js: true

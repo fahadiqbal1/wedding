@@ -1,0 +1,25 @@
+{% assign default_paths = site.pages | sort:"sort" | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+<nav id="nav">
+    {% if page_paths %}
+    <ul class="links">
+        <li {% if '/' == page.url %}class="active"{% endif %}>
+            <a href="{{ site.url }}"><i class="icon fa-home"></i></a>
+        </li>
+        {% for path in page_paths %}
+            {% assign my_page = site.pages | where: "path", path | first %}
+            {% if my_page.title %}
+                <li {% if my_page.url == page.url %}class="active"{% endif %}>
+                    <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <ul class="icons">
+        <li><a href="{{ site.social_media.twitter }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="{{ site.social_media.facebook }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="{{ site.social_media.instagram }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="{{ site.social_media.github }}" class="icon fa-github"><span class="label">GitHub</span></a></li>
+    </ul>
+</nav>

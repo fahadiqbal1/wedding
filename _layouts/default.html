@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="is-loading">
+
+    <div id="wrapper" class="fade-in">
+      {% include intro.html %}
+
+      <header id="header">
+        <a href="/" class="logo">{{ site.title }}</a>
+      </header>
+
+      {% include nav.html %}
+      <main id="main" class="page-content" aria-label="Content">
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+      {% include copyright.html %}
+    </div>
+
+    {% js main %}
+
+  </body>
+
+</html>

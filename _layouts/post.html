@@ -1,0 +1,24 @@
+---
+layout: default_without_intro
+---
+<article class="post featured" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="major">
+    {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+    <span class="post-meta date">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time>
+    </span>
+    <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
+    {% if page.author %}
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+    {% endif %}
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>
