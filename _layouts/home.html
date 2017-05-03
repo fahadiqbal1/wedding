@@ -18,7 +18,7 @@ layout: default
               </h2>
             </header>
             <a href="{{ page.url | relative_url }}" class="image fit">
-              {% img '{{ page.image | default: "pic03.jpg"}}' height:310 %}
+              <img src="{{ site.baseurl }}/assets/img/{{ page.image }}" alt="{{ page.title }}" height="310">
             </a>
             <p>{{ page.excerpt }}</p>
             <ul class="actions">

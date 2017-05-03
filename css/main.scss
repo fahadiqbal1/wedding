@@ -1,0 +1,13 @@
+---
+# 
+---
+
+@charset "utf-8";
+
+@import "massively/main.scss";
+
+#wrapper {
+    > .bg {
+        background-image: url("{{ site.baseurl }}/assets/img/overlay.png"),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("{{ site.baseurl }}/assets/img/bg.jpg")
+    }
+}

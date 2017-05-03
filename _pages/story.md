@@ -10,7 +10,7 @@ sort: 1
 
 ## How we met
 
-<span class="image left">{% img '1.jpg' %}</span>
+<span class="image left"></span>
 
 ## The Proposal
 

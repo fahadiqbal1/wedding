@@ -1,7 +1,8 @@
 title: Zarrish and Fahad
+subtitle: are getting married!
 email: about@fahadzarrish.wedding
 description: >
-  are getting married!
+  Fahad & Zarrish are getting married!
 baseurl: ""
 url: "http://fahadzarrish.wedding"
 address: |
@@ -17,19 +18,35 @@ social_media:
   facebook: https://www.facebook.com/hashtag/FahadZarrish
   instagram: https://www.instagram.com/explore/tags/FahadZarrish
   github: https://github.com/fahadiqbal1/wedding
-google_analytics: false
+google_analytics: UA-40896031-8
+
+# SEO Settings
+author:
+  twitter: soyFahad
+twitter:
+  username: soyFahad
+social:
+  name: Fahad & Zarrish's Wedding
+  links:
+   - https://twitter.com/hashtag/FahadZarrish
+   - https://www.facebook.com/hashtag/FahadZarrish
+   - https://www.instagram.com/explore/tags/FahadZarrish
 
 # Build settings
 markdown: kramdown
-# theme: minima
 gems:
   - jekyll-feed
-  - jekyll-assets
+  # - jekyll-assets
+  - jekyll-seo-tag
+  - jekyll-relative-links
 exclude:
   - Gemfile
   - Gemfile.lock
 include: ["_pages"]
 permalink: /:title/
+sass:
+    sass_dir: "assets/stylesheets"
+    style: compressed
 
 assets:
   compress:
