@@ -1,23 +1,32 @@
 <footer id="footer">
-  <section>
-    <form method="post" action="#">
+  {% if page.hide_contact_form %}
+    <section>
+      
+    </section>
+  {% else %}
+  <section id="contactForm">
+    <form method="post" action="#" id="contactUs">
       <div class="field">
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" required/>
       </div>
       <div class="field">
         <label for="email">Email</label>
-        <input type="text" name="email" id="email" />
+        <input type="email" name="email" id="email" required />
       </div>
       <div class="field">
         <label for="message">Message</label>
-        <textarea name="message" id="message" rows="3"></textarea>
+        <textarea name="message" id="message" rows="3" required></textarea>
+      </div>
+      <div class="field">
+        <div class="g-recaptcha" data-sitekey="6LdYLyAUAAAAAH1fcIccF8p4lj5AiajDOIrzghEW" data-callback="verifyReCaptchaContactForm"></div>
       </div>
       <ul class="actions">
         <li><input type="submit" value="Send Message" /></li>
       </ul>
     </form>
   </section>
+  {% endif %}
   <section class="split contact">
     <section class="alt">
       <h3>Valima</h3>
