@@ -36,6 +36,7 @@
                 Attending: data.attending,
                 Notes: data.notes,
                 PartySize: data.party,
+                DietOptions: data.diet,
             },
             success: function (response) {
                 $("form#rsvp").hide();

@@ -31,6 +31,16 @@ hide_contact_form: true
         <input type="range" name="party" id="party" min="1" max="10" value="0" oninput="outputPartySize(value)">
         <output for="party" id="partySize">Select a number</output>
     </div>
+    <div class="field attending-items">
+        <label for="diet">Do you or anyone in your party have any dietary restrictions?</label>
+        <select name="diet" id="diet" required>
+            <option value="No" selected>No</option>
+            <option value="Vegetarian">Yes, I/We can only eat vegetarian</option>
+            <option value="Vegan">Yes, I/We can only eat vegan</option>
+            <option value="Nut-Allergy">Yes, I/We have nut allergies</option>
+        </select>
+        <small>For any special cases, please let us know in the box below</small>
+    </div>
     <div class="field">
         <label for="notes">Do you have any comments or any thing we should know about?</label>
         <textarea name="notes" id="notes" rows="3" required></textarea>
