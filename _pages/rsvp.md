@@ -5,7 +5,7 @@ permalink: /rsvp/
 sort: 4
 excerpt: Let us know if you can make the event, we would be honored to have you attend
 read_more: RSVP
-image: 1.jpg
+image: https://res.cloudinary.com/fi/image/upload/v1494076333/1_epkf6m.jpg
 hide_contact_form: true
 ---
 
