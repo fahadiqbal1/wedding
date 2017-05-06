@@ -2,7 +2,7 @@
 layout: page
 title: Location
 permalink: /location/
-sort: 2
+sort: 3
 excerpt: Location information, Valima hall information and other useful tidbits
 read_more: Find Us
 image: https://res.cloudinary.com/fi/image/upload/v1494076334/4_f6zufa.jpg

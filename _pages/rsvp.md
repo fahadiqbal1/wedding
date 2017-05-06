@@ -2,7 +2,7 @@
 layout: page
 title: RSVP
 permalink: /rsvp/
-sort: 4
+sort: 2
 excerpt: Let us know if you can make the event, we would be honored to have you attend
 read_more: RSVP
 image: https://res.cloudinary.com/fi/image/upload/v1494076333/1_epkf6m.jpg
