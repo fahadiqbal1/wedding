@@ -3,7 +3,7 @@ layout: page
 title: Story
 permalink: /story/
 excerpt: The story of how two seemingly opposite people came together
-image: https://res.cloudinary.com/fi/image/upload/v1494076333/2_jvxp7l.jpg
+image: http://res.cloudinary.com/fi/image/upload/v1494757049/2_jvxp7l_iaey2z.jpg
 read_more: Full Story
 sort: 1
 ---

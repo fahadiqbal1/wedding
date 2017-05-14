@@ -5,7 +5,7 @@ permalink: /location/
 sort: 3
 excerpt: Location information, Valima hall information and other useful tidbits
 read_more: Find Us
-image: https://res.cloudinary.com/fi/image/upload/v1494076334/4_f6zufa.jpg
+image: http://res.cloudinary.com/fi/image/upload/v1494757049/4_f6zufa_dmrf4m.jpg
 ---
 
 ## Valima Location
