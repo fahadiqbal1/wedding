@@ -1,5 +1,5 @@
 {% for js_file in site.static_files %}
     {% if js_file.path contains 'javascripts' and js_file.path contains 'min' %}
-        <script async src="{{ site.baseurl }}{{ js_file.path }}"></script>
+        <script src="{{ site.baseurl }}{{ js_file.path }}"></script>
     {% endif %}
 {% endfor %}
